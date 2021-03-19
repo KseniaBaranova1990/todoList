@@ -17,7 +17,7 @@
 <body>
 
   <header>
-    <h1>Ksenia's Todo List</h1>
+    <h1>Todo List</h1>
   </header>
 
   <form>
@@ -25,13 +25,21 @@
     <button type="submit" class="todo-button">
       <i class="fas fa-plus square"></i>
     </button>
+    <div class="select">
+      <select name="todos" class="filter-todo">
+        <option value="all">All</option>
+        <option value="completed">completed</option>
+        <option value="uncompleted">Uncompleted</option>
+      </select>
+    </div>
   </form>
 
   <div class="todo-container">
-    <ul class="todo-list">
+    <ul class="todo-list"></ul>
   </div>
 
-  </ul>
+
+
 
 
   <script src="app.js"></script>
